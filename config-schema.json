@@ -1,0 +1,17 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "aoc-cli Config Schema",
+    "type": "object",
+    "properties": {
+        "token": {
+            "type": "string",
+            "description": "Your access token for adventofcode.com - stored as \"session\" cookie",
+            "exclusiveMinimum": 0
+        },
+        "location": {
+            "type": "string",
+            "description": "An optional file location to specify where to download input files"
+        }
+    },
+    "required": [ "token" ]
+}
